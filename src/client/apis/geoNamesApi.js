@@ -3,7 +3,7 @@
 const username = 'manpreetsingh';
 
 export async function getGeoCity(city) {
-    const dataUrl = 'http://api.geonames.org/' + 'searchJSON?formatted=true&q=' + city + '&username=' + username + '&style=full'; 
+    const dataUrl = 'https://secure.geonames.org/' + 'searchJSON?formatted=true&q=' + city + '&username=' + username + '&style=full'; 
     try {
       const res = await fetch(dataUrl);
       if (res.ok) {
